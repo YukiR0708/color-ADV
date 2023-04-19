@@ -8,6 +8,8 @@ public class PhotoData : ScriptableObject
 
 {
     [SerializeField, Tooltip("対象の場所のXZ平面座標")]private Vector2 _location = default;
+    [SerializeField, Multiline,Tooltip("TimeLineで表示テキスト")] private string _scenario = default;
     
     public Vector2 Location => _location;
+    public string Scenario => _scenario;
 }
